@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cbo-3P-Mbn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="fSQ-Lu-LKm">
+            <objects>
+                <navigationController id="cbo-3P-Mbn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ITD-Wo-mAh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WKV-BE-e8y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRs-hl-xqm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-809" y="139"/>
+        </scene>
+        <!--Tela 1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Tela 1" id="BYZ-38-t0r" customClass="ViewController" customModule="NavigationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbZ-QP-774">
+                                <rect key="frame" x="156" y="427.5" width="102" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baO-12-aPZ">
+                                <rect key="frame" x="107" y="500.5" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="zIo-rH-3U4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Abrir Storyboard"/>
+                                <connections>
+                                    <action selector="navigateTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqq-8R-kBq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eys-Zj-ifK">
+                                <rect key="frame" x="107" y="563.5" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5vr-gk-4ed"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Abrir Via Codigo"/>
+                                <connections>
+                                    <action selector="navigateToCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bX7-Bl-l6a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XbZ-QP-774" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ne-oV-zbg"/>
+                            <constraint firstItem="eys-Zj-ifK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BhZ-de-pf7"/>
+                            <constraint firstItem="eys-Zj-ifK" firstAttribute="top" secondItem="baO-12-aPZ" secondAttribute="bottom" constant="32" id="IIv-Wi-Eq5"/>
+                            <constraint firstItem="baO-12-aPZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P9P-7l-9AY"/>
+                            <constraint firstItem="XbZ-QP-774" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VoJ-cu-MtY"/>
+                            <constraint firstItem="baO-12-aPZ" firstAttribute="top" secondItem="XbZ-QP-774" secondAttribute="bottom" constant="32" id="ku6-Uc-Ldw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 1" id="h6P-js-NoM"/>
+                    <connections>
+                        <segue destination="Yku-bQ-BNp" kind="show" identifier="navegacaoTela2" id="mjV-NW-f2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="139"/>
+        </scene>
+        <!--Tela 2-->
+        <scene sceneID="w7f-mZ-2iC">
+            <objects>
+                <viewController storyboardIdentifier="MinhaTela2" title="Tela 2" id="Yku-bQ-BNp" customClass="Tela2ViewController" customModule="NavigationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="609-Ru-NDk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela 02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hia-G9-clv">
+                                <rect key="frame" x="151" y="426.5" width="112" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NkR-wD-6ae"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hia-G9-clv" firstAttribute="centerX" secondItem="609-Ru-NDk" secondAttribute="centerX" id="Jgi-Ri-cPF"/>
+                            <constraint firstItem="Hia-G9-clv" firstAttribute="centerY" secondItem="609-Ru-NDk" secondAttribute="centerY" id="stm-Pu-Mpz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 2" largeTitleDisplayMode="always" id="ctr-Hj-sXD">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="G7f-2K-vvO"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CH9-LL-Yp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
